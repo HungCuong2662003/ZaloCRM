@@ -1,6 +1,6 @@
 # CRM Zalo - Quản lý nhiều tài khoản và công việc nhóm
 
-Bản tùy chỉnh tại [HungCuong2662003/ZaloCRM](https://github.com/HungCuong2662003/ZaloCRM), phát triển từ [locphamnguyen/ZaloCRM](https://github.com/locphamnguyen/ZaloCRM). README mô tả repo hiện tại, không phải thông báo phát hành của dự án gốc.
+Mã nguồn: [HungCuong2662003/ZaloCRM](https://github.com/HungCuong2662003/ZaloCRM).
 
 Ứng dụng web tự lưu trữ để quản lý nhiều tài khoản Zalo, hội thoại, khách hàng, thành viên, link nhóm và job chạy nền. Frontend dùng Vue 3 + Vuetify; backend dùng Node.js + Fastify + Prisma; dữ liệu chính lưu PostgreSQL.
 
@@ -260,9 +260,9 @@ scripts/          Công cụ triển khai và vận hành
 
 - [Hướng dẫn chạy local chi tiết](HUONG-DAN-CHAY-LOCAL.md).
 - [Cài đặt](HUONG-DAN-CAI-DAT.md).
-- [Hướng dẫn production kế thừa](docs/HUONG-DAN-TRIEN-KHAI-PRODUCTION-COMMUNITY.md): rà lại repo, domain và cấu hình trước khi dùng.
+- [Hướng dẫn production](docs/HUONG-DAN-TRIEN-KHAI-PRODUCTION-COMMUNITY.md): rà lại repo, domain và cấu hình trước khi dùng.
 - [Chính sách bảo mật](SECURITY.md).
-- [Lịch sử kế thừa](CHANGELOG.md): không phải danh sách đầy đủ thay đổi của bản tùy chỉnh.
+- [Lịch sử thay đổi](CHANGELOG.md).
 
 Kiểm thử tập trung sau khi cài dependency backend:
 
@@ -272,13 +272,11 @@ npm --prefix backend test -- tests/group-scan-routes.test.ts tests/group-scan-wo
 
 Test không thay thế xác nhận gửi/join thật. Không thử trên người hoặc nhóm chưa đồng ý.
 
-## Nguồn gốc và giấy phép
+## Giấy phép
 
-Copyright (C) 2026 Nguyễn Tiến Lộc (Loc Nguyen). Bản tùy chỉnh giữ thông báo bản quyền, giấy phép và nguồn gốc code kế thừa; không nhận toàn bộ mã nguồn là tự viết.
+Copyright (C) 2026 Nguyễn Tiến Lộc (Loc Nguyen).
 
-- Nguồn gốc trực tiếp: [locphamnguyen/ZaloCRM](https://github.com/locphamnguyen/ZaloCRM).
-- Dự án/đóng góp được ghi nhận trong bản gốc: [hsholding](https://github.com/hsholding), [vuongnguyenbinh/ZaloCRM](https://github.com/vuongnguyenbinh/ZaloCRM), [darkamenosa/openzca](https://github.com/darkamenosa/openzca).
 - Xem [LICENSE](LICENSE), [NOTICE](NOTICE), [THIRD-PARTY-LICENSES.md](THIRD-PARTY-LICENSES.md), [CONTRIBUTING.md](CONTRIBUTING.md).
-- Code kế thừa phát hành theo GNU AGPL v3. Khi phân phối hoặc phục vụ bản chỉnh sửa qua mạng, thực hiện nghĩa vụ cung cấp mã nguồn tương ứng theo giấy phép. `NOTICE` còn có thông báo attribution/thương hiệu; đọc trước khi đổi tên/logo hoặc phân phối.
+- Phát hành theo GNU AGPL v3. Khi phân phối hoặc phục vụ bản chỉnh sửa qua mạng, thực hiện nghĩa vụ cung cấp mã nguồn tương ứng theo giấy phép. `NOTICE` còn có thông báo attribution/thương hiệu; đọc trước khi đổi tên/logo hoặc phân phối.
 
 Dự án độc lập, không phải sản phẩm chính thức của Zalo/VNG. Tự động hóa có thể vi phạm điều khoản nền tảng và làm tài khoản bị hạn chế. Phần mềm cung cấp nguyên trạng, không bảo đảm hoạt động với mọi tài khoản hoặc mọi thay đổi API.
